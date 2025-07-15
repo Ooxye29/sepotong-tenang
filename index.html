@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sepotong Tenang 🌧️</title>
+  <title>Sepotong Tenang 🌿</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Sora:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,31 +13,39 @@
   <audio id="bgMusic" loop>
     <source src="assets/audio.mp3" type="audio/mpeg" />
   </audio>
-  <button id="musicBtn">🔊</button>
+  <button id="musicBtn" title="Putar / Hentikan Musik">🔊</button>
 
   <!-- Efek hujan -->
   <canvas id="rain"></canvas>
 
   <!-- Kontainer Teks -->
   <div class="text-container" id="textBox">
-    <p id="text"></p>
+    <p id="text" class="typewriter"></p>
     <button id="nextBtn">Next</button>
+  </div>
+
+  <!-- Hidden Slide (Easter Egg) -->
+  <div class="hidden-slide" id="secretSlide">
+    <p>kok bisa kamu nemuin bagian ini ya? 🌘<br>gak semua orang bisa sampai sini.</p>
   </div>
 
   <!-- Footer Kontak -->
   <div class="footer">
-    <p>kalau mau curhat atau mau membahas sesuatu, hubungi saja ya, jangan sungkan.</p>
+    <p>kalau mau curhat silahkan<br>salam dari Rico Erfan</p>
     <div class="icons">
-      <a href="https://wa.me/qr/VKPXEOZVLGRSE1" target="_blank">
+      <a id="waIcon" href="https://wa.me/qr/VKPXEOZVLGRSE1" target="_blank">
         <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
       </a>
       <a href="https://www.instagram.com/rcoerfn_?igsh=b3BoNzR0ZDNsMnpm" target="_blank">
         <img src="assets/icons/instagram.png" alt="Instagram" />
       </a>
     </div>
+    <button id="restartBtn">↺ Ulang dari awal</button>
   </div>
 
+  <!-- Scripts -->
   <script src="rain.js"></script>
+  <script src="typewriter.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
