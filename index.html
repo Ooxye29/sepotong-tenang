@@ -3,69 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Untukmu, Hari Ini 🌿</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Sepotong Tenang 🌿</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <audio id="bgMusic" autoplay loop>
+    <source src="assets/audio.mp3" type="audio/mp3" />
+  </audio>
 
-    <!-- Kontrol Musik -->
-    <div class="audio-control">
-      <button id="toggleAudio">🔈</button>
-    </div>
-
-    <!-- Opening -->
-    <section class="hero fade-in">
-      <h1>Untukmu, Hari Ini</h1>
-      <p>Satu ruang kecil untukmu berhenti sejenak, dan merasa cukup.</p>
-      <button onclick="startJourney()">Mulai</button>
-    </section>
-
-    <!-- Pesan -->
-    <section class="message hidden fade-in">
-      <h2>Hari ini, kamu penting</h2>
-      <p>
-        Kamu mungkin jarang dengar ini, tapi hari ini semesta setuju: kamu layak merayakan dirimu. Terima kasih sudah bertahan sejauh ini.
-      </p>
-    </section>
-
-    <!-- Galeri -->
-    <section class="gallery hidden fade-in">
-      <h2>Sekilas Momen</h2>
-      <div class="images">
-        <img src="assets/galeri/img1.jpg" />
-        <img src="assets/galeri/img2.jpg" />
-        <img src="assets/galeri/img3.jpg" id="secretImage"/>
-      </div>
-    </section>
-
-    <!-- Kutipan -->
-    <section class="quotes hidden fade-in">
-      <h2>Kata-kata dari Langit Tenang</h2>
-      <div class="quote-box" id="quoteBox"></div>
-    </section>
-
-    <!-- Penutup -->
-    <section class="closing hidden fade-in">
-      <h2>Terima kasih sudah mampir 🌙</h2>
-      <p>
-        Tidak semua hari harus cepat. Tidak semua hal harus keras. Hari ini kamu hanya perlu hadir. Itu sudah cukup lebih dari cukup.
-      </p>
-    </section>
-
-    <!-- Popup Rahasia -->
-    <div id="secretPopup" class="hidden">
-      <div class="popup-content">
-        <p>Kamu sampai di bagian tersembunyi ✨<br> Mungkin ini cara alam bilang: kamu spesial, bahkan saat kamu tidak sadar.</p>
-        <button onclick="closePopup()">Tutup</button>
-      </div>
-    </div>
+  <div class="section" id="section1">
+    <h1>Halo, selamat datang :)</h1>
+    <p>Scroll pelan-pelan ya, santai aja…</p>
   </div>
 
-  <audio id="bgMusic" loop>
-    <source src="assets/audio.mp3" type="audio/mpeg" />
-  </audio>
+  <div class="section" id="section2">
+    <h2>Eh, tau nggak?</h2>
+    <p>Kamu tuh udah sejauh ini. Gila sih, keren banget menurutku.</p>
+  </div>
+
+  <div class="section image-section" id="section3">
+    <img src="assets/images/img1.jpg" alt="Momen Tenang" />
+    <p>Kadang, yang kita butuh cuma diem bentar & ngeliat langit.</p>
+  </div>
+
+  <div class="section" id="section4">
+    <h2>Beberapa kata...</h2>
+    <p id="quoteBox">"Pelan-pelan, nggak usah buru-buru jadi versi terbaikmu."</p>
+  </div>
+
+  <div class="section image-section" id="section5">
+    <img src="assets/images/img2.jpg" alt="Slide Estetik" />
+    <p>Kalau hari ini berat, yaudah, istirahat bentar juga gapapa kok.</p>
+  </div>
+
+  <div class="section" id="section6">
+    <h2>Makasih ya udah mampir 🤍</h2>
+    <p>Jangan buru-buru pergi, sini dulu bentar. Web ini dibuat beneran buat nemenin kamu sebentar aja.</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
