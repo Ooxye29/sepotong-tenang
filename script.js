@@ -1,3 +1,4 @@
+// -- TETAPKAN QUOTES --
 const quotes = [
   "Hari ini kamu cukup, bahkan saat kamu merasa tidak.",
   "Kamu nggak harus jadi yang paling kuat untuk tetap bertahan.",
@@ -8,6 +9,7 @@ const quotes = [
 
 let currentQuote = 0;
 
+// -- MULAI PERJALANAN --
 function startJourney() {
   document.querySelector('.hero').classList.add('hidden');
   document.getElementById("bgMusic").play();
@@ -24,12 +26,14 @@ function startJourney() {
   scrollToNext();
 }
 
+// -- SCROLL OTOMATIS --
 function scrollToNext() {
   setTimeout(() => {
     window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
   }, 1800);
 }
 
+// -- UPDATE QUOTE SETIAP 7 DETIK --
 function updateQuote() {
   const quoteBox = document.getElementById("quoteBox");
   quoteBox.textContent = quotes[currentQuote];
@@ -41,6 +45,7 @@ function updateQuote() {
   }, 7000);
 }
 
+// -- KONTROL AUDIO --
 const toggleBtn = document.getElementById('toggleAudio');
 const audio = document.getElementById('bgMusic');
 
@@ -54,13 +59,23 @@ toggleBtn.addEventListener('click', () => {
   }
 });
 
-const secretImage = document.getElementById('secretImage');
-const popup = document.getElementById('secretPopup');
+// -- POPUP RAHASIA DIKLIK MANUAL SAJA --
+window.addEventListener("DOMContentLoaded", () => {
+  const secretImage = document.getElementById('secretImage');
+  const popup = document.getElementById('secretPopup');
+  const closeBtn = document.querySelector('#secretPopup button');
 
-secretImage.addEventListener('click', () => {
-  popup.classList.remove('hidden');
+  if (secretImage) {
+    secretImage.addEventListener('click', () => {
+      popup.classList.remove('hidden');
+      popup.style.display = 'flex';
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      popup.classList.add('hidden');
+      popup.style.display = 'none';
+    });
+  }
 });
-
-function closePopup() {
-  popup.classList.add('hidden');
-}
