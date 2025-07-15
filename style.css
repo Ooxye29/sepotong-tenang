@@ -7,12 +7,23 @@
 body, html {
   height: 100%;
   width: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: url('assets/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
+  transition: background-color 1s ease;
+}
+
+canvas#rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 #musicBtn {
@@ -25,47 +36,47 @@ body, html {
   border-radius: 50%;
   padding: 10px;
   font-size: 18px;
-  z-index: 10;
+  z-index: 20;
   backdrop-filter: blur(6px);
   cursor: pointer;
-}
-
-canvas#rain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .text-container {
   z-index: 2;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 100%;
-  transform: translateY(-50%);
   text-align: center;
-  padding: 2rem;
-  animation: fade 1.5s ease;
+  padding: 1.5rem;
+  animation: fade 1s ease;
 }
 
 #text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  max-width: 90%;
+  margin: auto;
+  white-space: pre-line;
+  font-family: 'Sora', sans-serif;
+  font-weight: 300;
   text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
 #nextBtn {
-  padding: 10px 20px;
+  padding: 10px 24px;
   font-size: 1rem;
+  margin-top: 1.2rem;
   border: none;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.15);
   color: white;
   backdrop-filter: blur(6px);
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#nextBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .footer {
@@ -74,12 +85,12 @@ canvas#rain {
   width: 100%;
   text-align: center;
   font-size: 0.9rem;
-  z-index: 2;
+  z-index: 3;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .footer .icons {
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .footer .icons img {
@@ -93,7 +104,39 @@ canvas#rain {
   opacity: 1;
 }
 
+#restartBtn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.hidden-slide {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: 1.2rem;
+  z-index: 3;
+  padding: 1rem;
+  animation: fade 1s ease;
+}
+
 @keyframes fade {
   from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(-50%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.typewriter::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
