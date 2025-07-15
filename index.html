@@ -3,44 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sepotong Tenang 🌿</title>
+  <title>Sepotong Tenang 🌧️</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <audio id="bgMusic" autoplay loop>
-    <source src="assets/audio.mp3" type="audio/mp3" />
+
+  <!-- Musik -->
+  <audio id="bgMusic" loop>
+    <source src="assets/audio.mp3" type="audio/mpeg" />
   </audio>
+  <button id="musicBtn">🔊</button>
 
-  <div class="section" id="section1">
-    <h1>Halo, selamat datang :)</h1>
-    <p>Scroll pelan-pelan ya, santai aja…</p>
+  <!-- Efek hujan -->
+  <canvas id="rain"></canvas>
+
+  <!-- Kontainer Teks -->
+  <div class="text-container" id="textBox">
+    <p id="text"></p>
+    <button id="nextBtn">Next</button>
   </div>
 
-  <div class="section" id="section2">
-    <h2>Eh, tau nggak?</h2>
-    <p>Kamu tuh udah sejauh ini. Gila sih, keren banget menurutku.</p>
+  <!-- Footer Kontak -->
+  <div class="footer">
+    <p>kalau mau curhat atau mau membahas sesuatu, hubungi saja ya, jangan sungkan.</p>
+    <div class="icons">
+      <a href="https://wa.me/qr/VKPXEOZVLGRSE1" target="_blank">
+        <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/rcoerfn_?igsh=b3BoNzR0ZDNsMnpm" target="_blank">
+        <img src="assets/icons/instagram.png" alt="Instagram" />
+      </a>
+    </div>
   </div>
 
-  <div class="section image-section" id="section3">
-    <img src="assets/images/img1.jpg" alt="Momen Tenang" />
-    <p>Kadang, yang kita butuh cuma diem bentar & ngeliat langit.</p>
-  </div>
-
-  <div class="section" id="section4">
-    <h2>Beberapa kata...</h2>
-    <p id="quoteBox">"Pelan-pelan, nggak usah buru-buru jadi versi terbaikmu."</p>
-  </div>
-
-  <div class="section image-section" id="section5">
-    <img src="assets/images/img2.jpg" alt="Slide Estetik" />
-    <p>Kalau hari ini berat, yaudah, istirahat bentar juga gapapa kok.</p>
-  </div>
-
-  <div class="section" id="section6">
-    <h2>Makasih ya udah mampir 🤍</h2>
-    <p>Jangan buru-buru pergi, sini dulu bentar. Web ini dibuat beneran buat nemenin kamu sebentar aja.</p>
-  </div>
-
+  <script src="rain.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
