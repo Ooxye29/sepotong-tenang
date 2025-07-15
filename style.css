@@ -1,47 +1,99 @@
-body, html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
   font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
-  background-color: #fefaf5;
-  color: #3a3a3a;
+  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+#musicBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+
+canvas#rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
   text-align: center;
-  animation: fadeIn 1s ease-in-out;
+  padding: 2rem;
+  animation: fade 1.5s ease;
 }
 
-.section h1, .section h2 {
-  margin-bottom: 1rem;
-  font-size: 2em;
+#text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-.section p {
-  font-size: 1.2em;
-  max-width: 600px;
+#nextBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
 }
 
-.image-section img {
-  max-width: 80%;
-  border-radius: 16px;
-  margin-bottom: 1rem;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  animation: zoomFade 2s ease;
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.footer .icons {
+  margin-top: 0.4rem;
 }
 
-@keyframes zoomFade {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+.footer .icons img {
+  width: 28px;
+  margin: 0 10px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer .icons img:hover {
+  opacity: 1;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(-50%); }
 }
