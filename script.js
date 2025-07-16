@@ -1,83 +1,29 @@
 const texts = [
-  {
-    main: "wahhh...\nga nyangka banget bakal di buka🥲"
-  },
-  {
-    main: "eh...\nselamat ulang tahun ya 🤍"
-  },
-  {
-    main: "scroll aja pelan-pelan boss...",
-    sub: "ini tuh sengaja rico bikin\nbuat kamu sendiri😤"
-  },
-  {
-    main: "kamu tau ga...\nkadang kita semua tuh gak butuh nasihat\ncuma pengen ditemenin aja 🌿"
-  },
-  {
-    main: "bukan disemangatin atau apapun\ntetapi hanya sekedar ditemenin dalam diam...",
-    sub: "itu udah lebih dari cukup menurut rico sih 😌"
-  },
-  {
-    main: "kamu tuh udah sejauh ini...\npasti cape kan??"
-  },
-  {
-    main: "tapi kamu tuh beda!!! 😤🫶\nkamu tetap jalan terus...\ndan itu keren banget menurut Rico mah 😤😤"
-  },
-  {
-    main: "jangan terlalu maksain diri yaa...\nkalau hari ini terasa berat\nkamu tuh..\nboleh rebahan!\nboleh diem!\nboleh nangis!"
-  },
-  {
-    main: "kamu itu gak sendirian ☁️\njadi, jangan terlalu merasa tertekan\nataupun terbebani yaa..."
-  },
-  {
-    main: "lepaskan aja semuanyaa ✨\nhari ini hari spesial kamu...\nkamu tuh bebas mau ngapain aja 😤"
-  },
-  {
-    main: "happy birthday ya cantikk ✨"
-  },
-  {
-    main: "semoga di hari inii\ndan seterusnya tetap berarti 😸\nsemoga kamu tetap bisa nemuin\nyang namanya senyum.."
-  },
-  {
-    main: "meskipun gak semua hal itu membahagiakan...\nt-tapi pokoknya kamu tuh\nharus jadi versi yang lebih baik lagi 😤\ndan harus memprioritaskan\nkebahagiaan dirimu\ndaripada orang lain!!!"
-  },
-  {
-    main: "dan semoga...\nkamu tetap jadi diri kamu sendiri,\nmeskipun dunia kadang maksa kamu pakai topeng lain 🥀"
-  },
-  {
-    main: "makasih banyakkkk yaa..\nudah mau mampir ke sini 🥹"
-  },
-  {
-    main: "kata kata dari rico ga banyak kan 😅\ntapi semoga cukup.\nkadang, tenang aja udah lebih dari cukup 🌧️"
-  },
-  {
-    main: "wahhh...\nmasih scroll sampe sini? gila sih ini mah! 😭"
-  },
-  {
-    main: "dirimu fokus banget bacanya,\ngak kabur sampe akhir...\nterharu banget rico nih 🤧😭"
-  },
-  {
-    main: "dari hal itu aja udah jadi bukti, bahwa\ndirimu itu keren..✨"
-  },
-  {
-    main: "jujur aja nih...\nga banyak orang tahan\ndan nyimak isi pesan kayak gini..\nt-tapi dirimu bisa 🤧🫶"
-  },
-  {
-    main: "dan entah kenapa, rico tuh percaya...\nwalaupun hidup\nkadang capeknya minta ampun\n\nkamu pasti akan tetap berdiri!!",
-    sub: "dan rico percaya itu 😤"
-  },
-  {
-    main: "bukan karena kamu kuat\nTAPI karena kamu tuh pasti gak akan nyerah!!!\nitu hal yang beda loh 🫶"
-  },
-  {
-    main: "jadii....."
-  },
-  {
-    main: "sekali lagi rico ucapain\nmakasih yaa udah mampirr 🫶"
-  },
-  {
-    main: "🎉🎊💥 happy birthday 🥳🎉🎉",
-    isFinal: true
-  }
+  { main: "wahhh...\nga nyangka banget bakal di buka🥲" },
+  { main: "eh...\nselamat ulang tahun ya 🤍" },
+  { main: "scroll aja pelan-pelan boss...", sub: "ini tuh sengaja rico bikin\nbuat kamu sendiri😤" },
+  { main: "kamu tau ga...\nkadang kita semua tuh gak butuh nasihat\ncuma pengen ditemenin aja 🌿" },
+  { main: "bukan disemangatin atau apapun\ntetapi hanya sekedar ditemenin dalam diam...", sub: "itu udah lebih dari cukup menurut rico sih 😌" },
+  { main: "kamu tuh udah sejauh ini...\npasti cape kan??" },
+  { main: "tapi kamu tuh beda!!! 😤🫶\nkamu tetap jalan terus...\ndan itu keren banget menurut Rico mah 😤😤" },
+  { main: "jangan terlalu maksain diri yaa...\nkalau hari ini terasa berat\nkamu tuh..\nboleh rebahan!\nboleh diem!\nboleh nangis!" },
+  { main: "kamu itu gak sendirian ☁️\njadi, jangan terlalu merasa tertekan\nataupun terbebani yaa..." },
+  { main: "lepaskan aja semuanyaa ✨\nhari ini hari spesial kamu...\nkamu tuh bebas mau ngapain aja 😤" },
+  { main: "happy birthday ya cantikk ✨" },
+  { main: "semoga di hari inii\ndan seterusnya tetap berarti 😸\nsemoga kamu tetap bisa nemuin\nyang namanya senyum.." },
+  { main: "meskipun gak semua hal itu membahagiakan...\nt-tapi pokoknya kamu tuh\nharus jadi versi yang lebih baik lagi 😤\ndan harus memprioritaskan\nkebahagiaan dirimu\ndaripada orang lain!!!" },
+  { main: "dan semoga...\nkamu tetap jadi diri kamu sendiri,\nmeskipun dunia kadang maksa kamu pakai topeng lain 🥀" },
+  { main: "makasih banyakkkk yaa..\nudah mau mampir ke sini 🥹" },
+  { main: "kata kata dari rico ga banyak kan 😅\ntapi semoga cukup.\nkadang, tenang aja udah lebih dari cukup 🌧️" },
+  { main: "wahhh...\nmasih scroll sampe sini? gila sih ini mah! 😭" },
+  { main: "dirimu fokus banget bacanya,\ngak kabur sampe akhir...\nterharu banget rico nih 🤧😭" },
+  { main: "dari hal itu aja udah jadi bukti, bahwa\ndirimu itu keren..✨" },
+  { main: "jujur aja nih...\nga banyak orang tahan\ndan nyimak isi pesan kayak gini..\nt-tapi dirimu bisa 🤧🫶" },
+  { main: "dan entah kenapa, rico tuh percaya...\nwalaupun hidup\nkadang capeknya minta ampun\n\nkamu pasti akan tetap berdiri!!", sub: "dan rico percaya itu 😤" },
+  { main: "bukan karena kamu kuat\nTAPI karena kamu tuh pasti gak akan nyerah!!!\nitu hal yang beda loh 🫶" },
+  { main: "jadii....." },
+  { main: "sekali lagi rico ucapain\nmakasih yaa udah mampirr 🫶" },
+  { main: "🎉🎊💥 happy birthday 🥳🎉🎉", isFinal: true }
 ];
 
 let index = 0;
@@ -95,12 +41,10 @@ function showText(i) {
   const current = texts[i];
   textEl.innerHTML = "";
 
-  // Text utama
   const mainP = document.createElement("span");
   mainP.textContent = current.main;
   textEl.appendChild(mainP);
 
-  // Text sub (kecil & miring)
   if (current.sub) {
     const sub = document.createElement("span");
     sub.textContent = current.sub;
@@ -109,8 +53,8 @@ function showText(i) {
   }
 
   if (current.isFinal) {
-    createConfetti();
     textEl.classList.add("surprise");
+    setTimeout(createConfetti, 200); // delay biar muncul rapi
   } else {
     textEl.classList.remove("surprise");
   }
@@ -157,15 +101,19 @@ waIcon.addEventListener("click", () => {
 });
 
 function createConfetti() {
+  const container = document.querySelector(".confetti-container");
   const colors = ['#ff7675', '#74b9ff', '#ffeaa7', '#55efc4', '#fd79a8'];
-  const container = document.querySelector('.confetti-container');
-  for (let i = 0; i < 50; i++) {
-    const piece = document.createElement('div');
-    piece.classList.add('confetti-piece');
+
+  for (let i = 0; i < 60; i++) {
+    const piece = document.createElement("div");
+    piece.classList.add("confetti-piece");
     piece.style.left = `${Math.random() * 100}%`;
+    piece.style.bottom = `0`;
     piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.animationDelay = `${Math.random() * 0.5}s`;
     container.appendChild(piece);
-    setTimeout(() => piece.remove(), 2200);
+
+    setTimeout(() => piece.remove(), 3000);
   }
 }
 
