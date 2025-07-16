@@ -1,33 +1,42 @@
 const texts = [
-
-  // 0 - Pre-opening
   "wahhh...\nga nyangka banget bakal di buka🥲",
 
-  // 1 - Opening
-  "eh...\nselamat ulang tahun ya 🤍\nscroll aja pelan-pelan,\nini ruang buat kamu sendiri,",
+  "eh...\nselamat ulang tahun ya 🤍\nscroll aja pelan-pelan boss...\n\n\"ini tuh sengaja rico bikin buat kamu sendiri😤\"",
 
-  // 2 - Peringatan chill
-  "maaf ya ga bisa ngasih yang spesial 🤧\ncuma bisa ngasih satu halaman kecil ini...🥲",
+  "maaf ya rico ga bisa ngasih yang spesial 🤧\ncuma bisa ngasih satu halaman kecil ini 🥲",
 
-  // 3 - Transisi ringan
-  "kadang kita semua tuh gak butuh nasihat,\ncuma pengen ditemenin aja 🌿\n\nbukan disemangatin terus,\ntapi sekedar ditemenin dalam diam... udah cukup.",
+  "kamu tau ga...\nkadang kita semua tuh gak butuh nasihat\ncuma pengen ditemenin aja 🌿\nbukan disemangatin terus\n\nsekedar ditemenin dalam diam...\nitu udah lebih dari cukup menurut rico sih 😌",
 
-  // 4 - Kamu udah sejauh ini
-  "kamu udah sejauh ini...\nlelah kan?\nitu hal yang pasti.\ntapi kamu berbeda, kamu tetap jalan terus.🤍\ndan itu keren banget menurutku.😤",
+  "kamu tuh udah sejauh ini😤\npasti cape kan?\nitu hal yang udah jelas...\n\ntapi kamu tuh beda!!! 😤🫶\nkamu tetap jalan terus...\ndan itu keren banget menurut Rico mah 😤😤😤",
 
-  // 5 - Kamu gak sendirian
-  "jangan terlalu memaksakan diri,\nkalau hari ini terasa berat\nkamu boleh rebahan. boleh diem. boleh nangis.\n\nkamu itu gak sendirian ☁️\njadi, jangan terlalu merasa tertekan atau terbebani yaa, lepaskan aja semua✨\nhari ini hari spesial kamu, kamu bebas mau ngapain aja😤",
+  "jangan terlalu maksain diri yaa...\nkalau hari ini terasa berat\nkamu boleh rebahan! boleh diem! boleh nangis!\n\nkamu itu gak sendirian ☁️\njadi, jangan terlalu merasa tertekan atau terbebani yaa...\nlepaskan aja semuanyaa ✨\nhari ini hari spesial kamu, kamu tuh bebas mau ngapain aja 😤",
 
-  // 6 - Ucapan ulang tahun
-  "happy birthday ya ✨\n\nsemoga di hari ini dan seterusnya tetap berarti.\nsemoga kamu tetap bisa nemuin senyum,\nmeskipun gak semua hal ikut ngerayain kamu.\n\ndan...\nsemoga kamu tetap jadi diri kamu sendiri,\nmeskipun dunia kadang maksa kamu pakai topeng lain.",
+  "happy birthday ya cantikk ✨",
 
-  // 7 - Penutup tenang
-  "makasi udah mampir ke sini\n\nkata kata dari rico ga banyak kan😅,\ntapi semoga cukup.\nkadang, tenang aja udah lebih dari cukup 🌧️",
+  "semoga di hari ini dan seterusnya tetap berarti 😸\nsemoga kamu tetap bisa nemuin yang namanya senyum\nmeskipun gak semua hal itu membahagiakan...\nt-tapi pokoknya kamu harus jadi versi yang lebih baik lagi 😤\ndan harus memprioritaskan kebahagiaan dirimu daripada orang lain!!!",
 
-  // 8 - Slide penutup gaya Medan
-  "hmm...\n\nmasih juga scroll sampe sini? gila sih ini mah! 😭\n\ndirimu fokus banget bacanya,\ngak kabur sampe akhir...\nterharu banget rico nih🤧🤍\ndari hal itu aja udah jadi bukti, bahwa dirimu itu keren.✨\n\njujur aja, gak banyak orang tahan diem dan nyimak isi pesan kayak gini.\ndirimu bisa...🤧\n\ndan entah kenapa, Rico tuh percaya...\nwalaupun hidup kadang capeknya minta ampun,\ntapi kamu pasti akan tetap berdiri.\n\nbukan karena kamu kuat,\ntapi karena kamu tuh pasti gak akan nyerah.\nitu beda, loh. 🫶\nRico ngerti banget🥲\n\njadi ...\nmakasih yaa udah mampir.\n\nkalau web ini bisa bikin dirimu tenang,\nwalaupun cuma sedikit saja ...\nitu udah lebih dari cukup buat diriku,\nRico terikut senang juga😌"
+  "dan semoga...\nkamu tetap jadi diri kamu sendiri,\nmeskipun dunia kadang maksa kamu pakai topeng lain 🥀",
+
+  "makasih banyakkkk yaa, udah mau mampir ke sini 🥹\n\nkata kata dari rico ga banyak kan 😅\ntapi semoga cukup.\nkadang, tenang aja udah lebih dari cukup 🌧️",
+
+  "wahhh...\nmasih scroll sampe sini? gila sih ini mah! 😭",
+
+  "dirimu fokus banget bacanya,\ngak kabur sampe akhir...\nterharu banget rico nih 🤧😭",
+
+  "dari hal itu aja udah jadi bukti, bahwa dirimu itu keren.✨",
+
+  "jujur aja nih...\nga banyak orang tahan dan nyimak isi pesan kayak gini..\nt-tapi dirimu bisa 🤧🫶",
+
+  "dan entah kenapa, rico tuh percaya...\nwalaupun hidup kadang capeknya minta ampun\n\nkamu pasti akan tetap berdiri.",
+
+  "bukan karena kamu kuat\n\nTAPI karena kamu tuh pasti gak akan nyerah!!! 😤\nitu hal yang beda loh 🫶",
+
+  "jadii.....",
+
+  "sekali lagi rico ucapain\nmakasih yaa udah mampirr 🫶",
+
+  "🎉🎊💥 happy birthday 🥳🎉🎉\n\n(kamu layak dikasih surprise, minimal dari web ini hehe)"
 ];
-
 
 let index = 0;
 let waClickCount = 0;
@@ -41,17 +50,23 @@ const secretSlide = document.getElementById('secretSlide');
 const waIcon = document.getElementById('waIcon');
 
 function showText(i) {
-  textEl.classList.remove('typewriter');
-  void textEl.offsetWidth; // reset animation
-  textEl.classList.add('typewriter');
+  textEl.classList.remove('typewriter', 'surprise');
+  void textEl.offsetWidth;
+
   textEl.innerText = texts[i];
+  textEl.classList.add('typewriter');
+
+  // Tambahin efek kejutan khusus di slide ke-19 (index 18)
+  if (i === 18) {
+    textEl.classList.add('surprise');
+  }
 }
 
 nextBtn.addEventListener('click', () => {
   if (index < texts.length - 1) {
     index++;
     showText(index);
-    document.body.style.filter = `brightness(${100 - index * 5}%)`; // redup pelan
+    document.body.style.filter = `brightness(${100 - index * 3}%)`;
   } else {
     nextBtn.style.display = 'none';
     restartBtn.style.display = 'inline-block';
@@ -87,5 +102,4 @@ waIcon.addEventListener('click', () => {
   }
 });
 
-// start
 showText(index);
