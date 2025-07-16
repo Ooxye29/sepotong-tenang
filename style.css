@@ -53,7 +53,7 @@ canvas#rain {
 
 #text {
   font-size: 0.95rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
   max-width: 85%;
   margin: auto;
   white-space: pre-line;
@@ -61,8 +61,16 @@ canvas#rain {
   font-weight: 400;
   text-shadow: 0 0 4px rgba(0,0,0,0.4);
   opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInUp 0.6s ease forwards;
+  transform: translateY(20px);
+  animation: fadeSlide 0.6s ease forwards;
+}
+
+.small-italic {
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.85;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 #nextBtn {
@@ -140,14 +148,16 @@ canvas#rain {
   50% { opacity: 0; }
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .surprise {
   animation: pop 0.5s ease;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-shadow: 0 0 8px #fff;
 }
 
