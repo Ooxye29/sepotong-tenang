@@ -1,50 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  background: url('assets/bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  color: rgba(255, 255, 255, 0.88);
-  transition: background-color 1s ease;
-}
-
-canvas#rain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-#musicBtn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 20;
-  backdrop-filter: blur(6px);
-  cursor: pointer;
-}
-
 .text-container {
   z-index: 2;
   position: absolute;
-  top: 30%;
+  top: 22%; /* dinaikkan */
   width: 100%;
   text-align: center;
   padding: 1.5rem;
@@ -52,9 +9,9 @@ canvas#rain {
 }
 
 #text {
-  font-size: 1.1rem;
-  line-height: 1.8rem;
-  max-width: 90%;
+  font-size: 0.95rem; /* dikecilin */
+  line-height: 1.7rem;
+  max-width: 85%;
   margin: auto;
   white-space: pre-line;
   font-family: 'Sora', sans-serif;
@@ -62,81 +19,32 @@ canvas#rain {
   text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-#nextBtn {
-  padding: 10px 24px;
-  font-size: 1rem;
-  margin-top: 1.2rem;
-  border: none;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  backdrop-filter: blur(6px);
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-#nextBtn:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
 .footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   width: 100%;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.7rem; /* diperkecil */
   z-index: 3;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.footer .icons {
-  margin-top: 0.5rem;
-}
-
-.footer .icons img {
-  width: 28px;
-  margin: 0 10px;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.footer .icons img:hover {
-  opacity: 1;
-}
-
-#restartBtn {
-  margin-top: 10px;
-  background: none;
-  border: none;
   color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  font-size: 0.85rem;
+  font-style: italic;
 }
 
-.hidden-slide {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  text-align: center;
-  display: none;
-  color: #fff;
-  font-size: 1.2rem;
-  z-index: 3;
-  padding: 1rem;
-  animation: fade 1s ease;
+.footer p {
+  font-style: italic;
 }
 
-@keyframes fade {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.footer strong {
+  font-style: normal;
 }
 
-.typewriter::after {
-  content: '|';
-  animation: blink 1s infinite;
+.surprise {
+  animation: pop 0.5s ease;
+  font-size: 1.8rem;
+  text-shadow: 0 0 8px #fff;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1.2); opacity: 1; }
 }
