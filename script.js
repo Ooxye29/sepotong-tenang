@@ -1,41 +1,84 @@
 const texts = [
+  // 1
   "wahhh...\nga nyangka banget bakal di buka🥲",
 
-  "eh...\nselamat ulang tahun ya 🤍\nscroll aja pelan-pelan boss...\n\n\"ini tuh sengaja rico bikin buat kamu sendiri😤\"",
+  // 2
+  "eh...\nselamat ulang tahun ya 🤍",
 
-  "maaf ya rico ga bisa ngasih yang spesial 🤧\ncuma bisa ngasih satu halaman kecil ini 🥲",
+  // 3
+  "scroll aja pelan-pelan boss...\nini tuh sengaja rico bikin\nbuat kamu sendiri😤",
 
-  "kamu tau ga...\nkadang kita semua tuh gak butuh nasihat\ncuma pengen ditemenin aja 🌿\nbukan disemangatin terus\n\nsekedar ditemenin dalam diam...\nitu udah lebih dari cukup menurut rico sih 😌",
+  // 4
+  "_(teks kecil)_ scroll aja pelan-pelan boss...\nini tuh sengaja rico bikin\nbuat kamu sendiri😤",
 
-  "kamu tuh udah sejauh ini😤\npasti cape kan?\nitu hal yang udah jelas...\n\ntapi kamu tuh beda!!! 😤🫶\nkamu tetap jalan terus...\ndan itu keren banget menurut Rico mah 😤😤😤",
+  // 5
+  "kamu tau ga...\nkadang kita semua tuh gak butuh nasihat\ncuma pengen ditemenin aja 🌿",
 
-  "jangan terlalu maksain diri yaa...\nkalau hari ini terasa berat\nkamu boleh rebahan! boleh diem! boleh nangis!\n\nkamu itu gak sendirian ☁️\njadi, jangan terlalu merasa tertekan atau terbebani yaa...\nlepaskan aja semuanyaa ✨\nhari ini hari spesial kamu, kamu tuh bebas mau ngapain aja 😤",
+  // 6
+  "bukan disemangatin atau apapun\ntetapi hanya sekedar ditemenin dalam diam...",
 
+  // 7
+  "_(teks kecil)_ itu udah lebih dari cukup menurut rico sih 😌",
+
+  // 8
+  "kamu tuh udah sejauh ini...\npasti cape kan??",
+
+  // 9
+  "tapi kamu tuh beda!!! 😤🫶\nkamu tetap jalan terus...\ndan itu keren banget menurut Rico mah 😤😤",
+
+  // 10
+  "jangan terlalu maksain diri yaa...\nkalau hari ini terasa berat\nkamu tuh..\nboleh rebahan!\nboleh diem!\nboleh nangis!",
+
+  // 11
+  "kamu itu gak sendirian ☁️\njadi, jangan terlalu merasa tertekan\nataupun terbebani yaa...",
+
+  // 12
+  "lepaskan aja semuanyaa ✨\nhari ini hari spesial kamu...\nkamu tuh bebas mau ngapain aja 😤",
+
+  // 13
   "happy birthday ya cantikk ✨",
 
-  "semoga di hari ini dan seterusnya tetap berarti 😸\nsemoga kamu tetap bisa nemuin yang namanya senyum\nmeskipun gak semua hal itu membahagiakan...\nt-tapi pokoknya kamu harus jadi versi yang lebih baik lagi 😤\ndan harus memprioritaskan kebahagiaan dirimu daripada orang lain!!!",
+  // 14
+  "semoga di hari inii\ndan seterusnya tetap berarti 😸\nsemoga kamu tetap bisa nemuin\nyang namanya senyum..",
 
+  // 15
+  "meskipun gak semua hal itu membahagiakan...\nt-tapi pokoknya kamu tuh\nharus jadi versi yang lebih baik lagi 😤\ndan harus memprioritaskan\nkebahagiaan dirimu\ndaripada orang lain!!!",
+
+  // 16
   "dan semoga...\nkamu tetap jadi diri kamu sendiri,\nmeskipun dunia kadang maksa kamu pakai topeng lain 🥀",
 
-  "makasih banyakkkk yaa, udah mau mampir ke sini 🥹\n\nkata kata dari rico ga banyak kan 😅\ntapi semoga cukup.\nkadang, tenang aja udah lebih dari cukup 🌧️",
+  // 17
+  "makasih banyakkkk yaa..\nudah mau mampir ke sini 🥹",
 
+  // 18
+  "kata kata dari rico ga banyak kan 😅\ntapi semoga cukup.\nkadang, tenang aja udah lebih dari cukup 🌧️",
+
+  // 19
   "wahhh...\nmasih scroll sampe sini? gila sih ini mah! 😭",
 
-  "dirimu fokus banget bacanya,\ngak kabur sampe akhir...\nterharu banget rico nih 🤧😭",
+  // 20
+  "dirimu fokus banget bacanya, \ngak kabur sampe akhir... \nterharu banget rico nih 🤧😭",
 
-  "dari hal itu aja udah jadi bukti, bahwa dirimu itu keren.✨",
+  // 21
+  "dari hal itu aja udah jadi bukti, bahwa\ndirimu itu keren..✨",
 
-  "jujur aja nih...\nga banyak orang tahan dan nyimak isi pesan kayak gini..\nt-tapi dirimu bisa 🤧🫶",
+  // 22
+  "jujur aja nih...\nga banyak orang tahan\ndan nyimak isi pesan kayak gini..\nt-tapi dirimu bisa 🤧🫶",
 
-  "dan entah kenapa, rico tuh percaya...\nwalaupun hidup kadang capeknya minta ampun\n\nkamu pasti akan tetap berdiri.",
+  // 23
+  "dan entah kenapa, rico tuh percaya...\nwalaupun hidup\nkadang capeknya minta ampun\n\nkamu pasti akan tetap berdiri!!\ndan rico percaya itu 😤",
 
-  "bukan karena kamu kuat\n\nTAPI karena kamu tuh pasti gak akan nyerah!!! 😤\nitu hal yang beda loh 🫶",
+  // 24
+  "bukan karena kamu kuat\nTAPI karena kamu tuh pasti gak akan nyerah!!!\nitu hal yang beda loh 🫶",
 
+  // 25
   "jadii.....",
 
+  // 26
   "sekali lagi rico ucapain\nmakasih yaa udah mampirr 🫶",
 
-  "🎉🎊💥 happy birthday 🥳🎉🎉\n\n(kamu layak dikasih surprise, minimal dari web ini hehe)"
+  // 27 (slide terakhir / surprise)
+  "🎉🎊💥 happy birthday 🥳🎉🎉"
 ];
 
 let index = 0;
@@ -53,20 +96,22 @@ function showText(i) {
   textEl.classList.remove('typewriter', 'surprise');
   void textEl.offsetWidth;
 
-  textEl.innerText = texts[i];
-  textEl.classList.add('typewriter');
+  textEl.textContent = texts[i];
 
-  // Tambahin efek kejutan khusus di slide ke-19 (index 18)
-  if (i === 18) {
+  // Apply surprise effect only on final slide
+  if (i === texts.length - 1) {
     textEl.classList.add('surprise');
+    createConfetti();
   }
+
+  textEl.classList.add('typewriter');
 }
 
 nextBtn.addEventListener('click', () => {
   if (index < texts.length - 1) {
     index++;
     showText(index);
-    document.body.style.filter = `brightness(${100 - index * 3}%)`;
+    document.body.style.filter = `brightness(${100 - index * 2}%)`;
   } else {
     nextBtn.style.display = 'none';
     restartBtn.style.display = 'inline-block';
@@ -101,5 +146,20 @@ waIcon.addEventListener('click', () => {
     }, 5000);
   }
 });
+
+function createConfetti() {
+  for (let i = 0; i < 80; i++) {
+    const confetti = document.createElement("div");
+    confetti.textContent = "🎉";
+    confetti.style.position = "fixed";
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.top = "-10px";
+    confetti.style.fontSize = "20px";
+    confetti.style.animation = "fall 2s ease-out forwards";
+    document.body.appendChild(confetti);
+
+    setTimeout(() => confetti.remove(), 2000);
+  }
+}
 
 showText(index);
