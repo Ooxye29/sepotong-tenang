@@ -157,17 +157,15 @@ waIcon.addEventListener("click", () => {
 });
 
 function createConfetti() {
-  for (let i = 0; i < 80; i++) {
-    const confetti = document.createElement("div");
-    confetti.textContent = "🎉";
-    confetti.style.position = "fixed";
-    confetti.style.left = Math.random() * 100 + "vw";
-    confetti.style.top = "-10px";
-    confetti.style.fontSize = "20px";
-    confetti.style.animation = "fall 2s ease-out forwards";
-    document.body.appendChild(confetti);
-
-    setTimeout(() => confetti.remove(), 2000);
+  const colors = ['#ff7675', '#74b9ff', '#ffeaa7', '#55efc4', '#fd79a8'];
+  const container = document.querySelector('.confetti-container');
+  for (let i = 0; i < 50; i++) {
+    const piece = document.createElement('div');
+    piece.classList.add('confetti-piece');
+    piece.style.left = `${Math.random() * 100}%`;
+    piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    container.appendChild(piece);
+    setTimeout(() => piece.remove(), 2200);
   }
 }
 
