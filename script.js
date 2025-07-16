@@ -1,6 +1,4 @@
 const texts = [
-  ...
-];
 
   // 0 - Pre-opening
   "wahhh...\nga nyangka banget bakal di buka🥲",
